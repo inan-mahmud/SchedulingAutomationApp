@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A02A0612B052335002C36E9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02A0602B052335002C36E9 /* SignInView.swift */; };
 		3A3334742B037C7200AC0B99 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334732B037C7200AC0B99 /* FirebaseAuth */; };
 		3A3334772B0389B700AC0B99 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334762B0389B700AC0B99 /* GoogleSignIn */; };
 		3A3334792B0389B700AC0B99 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334782B0389B700AC0B99 /* GoogleSignInSwift */; };
 		3A9A60032B03B9D900D56948 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A60022B03B9D900D56948 /* GoogleService-Info.plist */; };
 		3AA212262AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212252AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift */; };
-		3AA212282AFFFBCC00C9FA4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212272AFFFBCC00C9FA4D /* ContentView.swift */; };
 		3AA2122A2AFFFBE900C9FA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA212292AFFFBE900C9FA4D /* Assets.xcassets */; };
 		3AA2122D2AFFFBE900C9FA4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA2122C2AFFFBE900C9FA4D /* Preview Assets.xcassets */; };
 		3AA212372AFFFBEA00C9FA4D /* SchedulingAutomationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212362AFFFBEA00C9FA4D /* SchedulingAutomationAppTests.swift */; };
@@ -38,11 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A02A0602B052335002C36E9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3A33347A2B039E7600AC0B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A9A60022B03B9D900D56948 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AA212222AFFFBCC00C9FA4D /* SchedulingAutomationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchedulingAutomationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA212252AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingAutomationAppApp.swift; sourceTree = "<group>"; };
-		3AA212272AFFFBCC00C9FA4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AA212292AFFFBE900C9FA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AA2122C2AFFFBE900C9FA4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3AA212322AFFFBEA00C9FA4D /* SchedulingAutomationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulingAutomationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +80,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A02A0622B0527B6002C36E9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3A02A06A2B05286A002C36E9 /* SignIn */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3A02A0642B0527C6002C36E9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3A02A0692B052849002C36E9 /* Api */,
+				3A02A0662B0527D6002C36E9 /* Utils */,
+				3A02A0652B0527CE002C36E9 /* Route */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3A02A0652B0527CE002C36E9 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		3A02A0662B0527D6002C36E9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3A02A0692B052849002C36E9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		3A02A06A2B05286A002C36E9 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3A02A06D2B052885002C36E9 /* UI */,
+				3A02A06C2B05287D002C36E9 /* Domain */,
+				3A02A06B2B052876002C36E9 /* Data */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		3A02A06B2B052876002C36E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A02A06C2B05287D002C36E9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3A02A06D2B052885002C36E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A02A06E2B05288C002C36E9 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3A02A06E2B05288C002C36E9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3A02A0602B052335002C36E9 /* SignInView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		3AA212192AFFFBCC00C9FA4D = {
 			isa = PBXGroup;
 			children = (
@@ -103,9 +182,10 @@
 		3AA212242AFFFBCC00C9FA4D /* SchedulingAutomationApp */ = {
 			isa = PBXGroup;
 			children = (
+				3A02A0642B0527C6002C36E9 /* Core */,
+				3A02A0622B0527B6002C36E9 /* Features */,
 				3A33347A2B039E7600AC0B99 /* Info.plist */,
 				3AA212252AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift */,
-				3AA212272AFFFBCC00C9FA4D /* ContentView.swift */,
 				3A9A60022B03B9D900D56948 /* GoogleService-Info.plist */,
 				3AA212292AFFFBE900C9FA4D /* Assets.xcassets */,
 				3AA2122B2AFFFBE900C9FA4D /* Preview Content */,
@@ -278,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA212282AFFFBCC00C9FA4D /* ContentView.swift in Sources */,
+				3A02A0612B052335002C36E9 /* SignInView.swift in Sources */,
 				3AA212262AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
