@@ -13,7 +13,7 @@ struct SignInView: View {
     var body: some View {
         GoogleSignInButton {
             
-        }
+        }.padding(12)
     }
 }
 

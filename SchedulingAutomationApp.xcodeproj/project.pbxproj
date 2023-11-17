@@ -18,6 +18,9 @@
 		3AA212372AFFFBEA00C9FA4D /* SchedulingAutomationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212362AFFFBEA00C9FA4D /* SchedulingAutomationAppTests.swift */; };
 		3AA212412AFFFBEA00C9FA4D /* SchedulingAutomationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212402AFFFBEA00C9FA4D /* SchedulingAutomationAppUITests.swift */; };
 		3AA212432AFFFBEA00C9FA4D /* SchedulingAutomationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA212422AFFFBEA00C9FA4D /* SchedulingAutomationAppUITestsLaunchTests.swift */; };
+		3AA550DC2B06478C00311152 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA550DB2B06478C00311152 /* HttpClient.swift */; };
+		3AA550DE2B064BBA00311152 /* AuthenticationJWTDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA550DD2B064BBA00311152 /* AuthenticationJWTDTO.swift */; };
+		3AA550E02B064D9F00311152 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA550DF2B064D9F00311152 /* Authenticator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		3AA2123C2AFFFBEA00C9FA4D /* SchedulingAutomationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchedulingAutomationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA212402AFFFBEA00C9FA4D /* SchedulingAutomationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingAutomationAppUITests.swift; sourceTree = "<group>"; };
 		3AA212422AFFFBEA00C9FA4D /* SchedulingAutomationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingAutomationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AA550DB2B06478C00311152 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		3AA550DD2B064BBA00311152 /* AuthenticationJWTDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationJWTDTO.swift; sourceTree = "<group>"; };
+		3AA550DF2B064D9F00311152 /* Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		3A02A0662B0527D6002C36E9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3A02A06F2B052C14002C36E9 /* Constants */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -115,6 +122,9 @@
 		3A02A0692B052849002C36E9 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				3AA550DB2B06478C00311152 /* HttpClient.swift */,
+				3AA550DD2B064BBA00311152 /* AuthenticationJWTDTO.swift */,
+				3AA550DF2B064D9F00311152 /* Authenticator.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -157,6 +167,13 @@
 				3A02A0602B052335002C36E9 /* SignInView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		3A02A06F2B052C14002C36E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		3AA212192AFFFBCC00C9FA4D = {
@@ -358,7 +375,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AA550E02B064D9F00311152 /* Authenticator.swift in Sources */,
 				3A02A0612B052335002C36E9 /* SignInView.swift in Sources */,
+				3AA550DE2B064BBA00311152 /* AuthenticationJWTDTO.swift in Sources */,
+				3AA550DC2B06478C00311152 /* HttpClient.swift in Sources */,
 				3AA212262AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
