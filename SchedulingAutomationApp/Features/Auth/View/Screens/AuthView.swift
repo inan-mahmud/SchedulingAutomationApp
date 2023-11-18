@@ -9,7 +9,7 @@ import SwiftUI
 import GoogleSignIn
 import GoogleSignInSwift
 
-struct SignInView: View {
+struct AuthView: View {
     var body: some View {
         GoogleSignInButton {
             
@@ -17,9 +17,9 @@ struct SignInView: View {
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        AuthView()
     }
 }
        

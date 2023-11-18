@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A02A0612B052335002C36E9 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02A0602B052335002C36E9 /* SignInView.swift */; };
+		3A02A0612B052335002C36E9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02A0602B052335002C36E9 /* AuthView.swift */; };
+		3A2A170A2B08F152007F1752 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A17092B08F152007F1752 /* TopViewController.swift */; };
+		3A2A170F2B093F2F007F1752 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A170E2B093F2F007F1752 /* AuthViewModel.swift */; };
 		3A3334742B037C7200AC0B99 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334732B037C7200AC0B99 /* FirebaseAuth */; };
 		3A3334772B0389B700AC0B99 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334762B0389B700AC0B99 /* GoogleSignIn */; };
 		3A3334792B0389B700AC0B99 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3334782B0389B700AC0B99 /* GoogleSignInSwift */; };
@@ -41,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A02A0602B052335002C36E9 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3A02A0602B052335002C36E9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3A2A17092B08F152007F1752 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		3A2A170E2B093F2F007F1752 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		3A33347A2B039E7600AC0B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3A9A60022B03B9D900D56948 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3AA212222AFFFBCC00C9FA4D /* SchedulingAutomationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchedulingAutomationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +93,7 @@
 		3A02A0622B0527B6002C36E9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				3A02A06A2B05286A002C36E9 /* SignIn */,
+				3A02A06A2B05286A002C36E9 /* Auth */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 		3A02A0662B0527D6002C36E9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3A2A17082B08F033007F1752 /* UIKitComponents */,
 				3A02A06F2B052C14002C36E9 /* Constants */,
 			);
 			path = Utils;
@@ -129,14 +134,14 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		3A02A06A2B05286A002C36E9 /* SignIn */ = {
+		3A02A06A2B05286A002C36E9 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				3A02A06D2B052885002C36E9 /* UI */,
+				3A02A06D2B052885002C36E9 /* View */,
 				3A02A06C2B05287D002C36E9 /* Domain */,
 				3A02A06B2B052876002C36E9 /* Data */,
 			);
-			path = SignIn;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		3A02A06B2B052876002C36E9 /* Data */ = {
@@ -153,18 +158,19 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		3A02A06D2B052885002C36E9 /* UI */ = {
+		3A02A06D2B052885002C36E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3A2A170D2B093EFD007F1752 /* ViewModels */,
 				3A02A06E2B05288C002C36E9 /* Screens */,
 			);
-			path = UI;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3A02A06E2B05288C002C36E9 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				3A02A0602B052335002C36E9 /* SignInView.swift */,
+				3A02A0602B052335002C36E9 /* AuthView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -174,6 +180,22 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		3A2A17082B08F033007F1752 /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3A2A17092B08F152007F1752 /* TopViewController.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		3A2A170D2B093EFD007F1752 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A2A170E2B093F2F007F1752 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		3AA212192AFFFBCC00C9FA4D = {
@@ -376,10 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AA550E02B064D9F00311152 /* Authenticator.swift in Sources */,
-				3A02A0612B052335002C36E9 /* SignInView.swift in Sources */,
+				3A02A0612B052335002C36E9 /* AuthView.swift in Sources */,
 				3AA550DE2B064BBA00311152 /* AuthenticationJWTDTO.swift in Sources */,
 				3AA550DC2B06478C00311152 /* HttpClient.swift in Sources */,
+				3A2A170F2B093F2F007F1752 /* AuthViewModel.swift in Sources */,
 				3AA212262AFFFBCC00C9FA4D /* SchedulingAutomationAppApp.swift in Sources */,
+				3A2A170A2B08F152007F1752 /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
